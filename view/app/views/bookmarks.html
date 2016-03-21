@@ -1,0 +1,23 @@
+<a class="btn btn-primary" href="/#/create/bookmark"><span class="glyphicon glyphicon-plus"></span> Create Bookmark</a>
+<br/>
+<table class="table table-striped">
+  <thead>
+    <th>Title</th>
+    <th>URL</th>
+    <th>Youtube Link</th>
+    <th>Operations</th>
+  </thead>
+  <tbody>
+    <tr ng-repeat="bookmark in bookmarks.bookmarks">
+      <td><a ng-href="/#/bookmarks/{{ bookmark._id }}">{{ bookmark.title }}</a></td>
+      <td>{{ bookmark.url }}</td>
+      <td>{{ bookmark.embedded }}</td>
+      <td>
+        <div class="button-group">
+          <a ng-href="/#/bookmarks/{{ bookmark._id }}/edit" class="btn btn-default"><span class="glyphicon glyphicon-edit"></span></a>
+          <a ng-href="/#/bookmarks/{{ bookmark._id }}/delete" class="btn btn-danger"><span class="glyphicon glyphicon-remove-circle"></span></a>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>

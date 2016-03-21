@@ -1,0 +1,15 @@
+<form role="form">
+  <div class="form-group">
+    <label for="title" class="control-label">Title</label>
+    <input type="text" ng-model="bookmark.title" class="form-control" id="title" placeholder="Enter the Bookmark title"/>
+  </div>
+  <div class="form-group">
+    <label for="title" class="control-label">URL</label>
+    <input type="text" ng-model="bookmark.url" class="form-control" id="title" placeholder="Enter the Page URL"/>
+  </div>
+  <div class="form-group">
+    <label for="title" class="control-label">URL</label>
+    <input type="text" ng-model="bookmark.embedded" class="form-control" id="title" placeholder="Enter the YouTube URL"/>
+  </div>
+  <input type="submit" class="btn btn-primary" ng-click="save()" value="Save"/>
+</form>
